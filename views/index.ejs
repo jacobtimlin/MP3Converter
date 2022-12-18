@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>MP3 Converter</title>
+</head>
+<body>
+    <div class="upper-section">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Youtube to MP3 Converter</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/account"><span class="glyphicon glyphicon-user"></span> Account Info</a></li>
+                <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            </div>
+        </nav>
+    <h1 id="mysqlwelcome">Welcome</h1>
+    <h2>Please complete the form below to begin.</h2>
+    <h3>Enter the video tag within link to convert. Example: i7PPXJUPYsQ, which appears at end of URL.</h3>
+    <form action="/convert" method="POST" id="downloader">
+        <div>
+            <input type="text" name="tag" placeholder="Video Tag"><button id="convert">Convert</button>
+        </div>
+    </form>
+    </div>
+    <div class="lower-section">
+        <h3>Download:</h3>
+        <% if(typeof converted != "undefined" && converted){ %>
+            <div class="converted">
+                <p><%= title %></p>
+                <a href="<%=link%>"><button id="download">Download</button></a>
+            </div>
+        <% } else if(typeof converted != "undefined" && !converted){ %>
+            <div class="err">
+                <p><%= error %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

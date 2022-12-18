@@ -1,0 +1,64 @@
+.navbar a{
+    color:white;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+.upper-section{
+    background-color: darkred;
+}
+#downloader{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 15px;
+    background: black;
+    padding: 10px;
+    width: 300px;
+}
+.lower-section{
+    background-color: black;
+}
+.converted{
+    text-align: center;
+    color: white;
+}
+.err{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: darkred;
+}
+.checkbox{
+    color: white;
+}
+#login{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#register{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.userinfo{
+    text-align: center;
+    color: white;
+}

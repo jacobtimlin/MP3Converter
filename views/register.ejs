@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id="register">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand">Youtube to MP3 Converter</a>
+        <a href="/" class="navbar-brand">Converter</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    </div>
+</nav>
+<h1>Register</h1>
+<body>
+    <form action="/register" method="POST">
+        <input for="text" id="name" name="name" required placeholder="Name">
+        <input for="text" id="email" name="email" required placeholder="Email">
+        <input for="text" id="password" name="password" required placeholder="Password">
+        <section>
+            <button type="submit">Submit</button>
+        </section>
+        <a href="/login">Login</a>
+    </form>
+</body>
+</div>
+</html>
